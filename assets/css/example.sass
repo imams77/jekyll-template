@@ -1,0 +1,73 @@
+---
+---
+body  
+  background: rgba(222,222,222,1)
+  background: -moz-linear-gradient(left, rgba(222,222,222,1) 0%, rgba(247,247,247,1) 100%)
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(222,222,222,1)), color-stop(100%, rgba(247,247,247,1)))
+  background: -webkit-linear-gradient(left, rgba(222,222,222,1) 0%, rgba(247,247,247,1) 100%)
+  background: -o-linear-gradient(left, rgba(222,222,222,1) 0%, rgba(247,247,247,1) 100%)
+  background: -ms-linear-gradient(left, rgba(222,222,222,1) 0%, rgba(247,247,247,1) 100%)
+  background: linear-gradient(to right, rgba(222,222,222,1) 0%, rgba(247,247,247,1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#f7f7f7', GradientType=1 )
+  .wrapper
+    display: flex
+    font-family: 'Montserrat', sans-serif
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    height: 100vh
+    width: 100%
+    .example
+      border-radius: 100%
+      transition: all ease-in-out .6s
+      box-shadow: 5px 5px 10px -4px rgba(0,0,0,.3)
+      padding: 50px
+      height: 200px
+      transform: translateY(-20px)
+      opacity: 0
+      width: 200px
+      color: white
+      text-align: center
+      display: flex
+      font-family: 'Montserrat', sans-serif
+      justify-content: center
+      align-items: center
+      background: rgba(164,52,207,1)
+      background: -moz-linear-gradient(left, rgba(164,52,207,1) 0%, rgba(231,56,39,1) 100%)
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,52,207,1)), color-stop(100%, rgba(231,56,39,1)))
+      background: -webkit-linear-gradient(left, rgba(164,52,207,1) 0%, rgba(231,56,39,1) 100%)
+      background: -o-linear-gradient(left, rgba(164,52,207,1) 0%, rgba(231,56,39,1) 100%)
+      background: -ms-linear-gradient(left, rgba(164,52,207,1) 0%, rgba(231,56,39,1) 100%)
+      background: linear-gradient(to right, rgba(164,52,207,1) 0%, rgba(231,56,39,1) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a434cf', endColorstr='#e73827', GradientType=1 )
+      h1
+        opacity: 0
+        transition: all .5s ease-in-out .8s
+      &.active
+        transform: translateY(0px)
+        opacity: 1
+        h1
+          opacity: 1
+p
+  padding-top: 50px
+  transform: translateY(20px)
+  transition: all ease-in-out .5s
+  color: #bbb
+  opacity: 0
+  &.active
+    opacity: 1
+    transform: translateY(0)
+.copy
+  position: absolute
+  color: #bbb
+  letter-spacing: 2px
+  bottom: 20px
+  width: 100%
+  text-align: center
+  font-size: 10px
+  opacity: 0
+  transition: all ease-in-out .3s
+  transform: translateY(20px)
+  &.active
+    opacity: 1
+    transform: translateY(0)
